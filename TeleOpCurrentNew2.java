@@ -200,19 +200,6 @@ public class TeleOpCurrentNew extends OpMode {
         // Fast raise arm mode
         if (gamepad2.right_trigger>0){
             //If the driver is trying to move the arm up:
-            setRaiseArmPower(rawRaiseValue, 0.6);
-        }
-        // Slow raise arm mode
-
-        //setRaiseArmPower(rawRaiseValue, 0.35);
-        else {
-            //If the driver is trying to move the arm up:
-            setRaiseArmPower(rawRaiseValue, 0.35);
-        }
-
-        // Fast raise arm mode
-        if (gamepad2.right_trigger>0){
-            //If the driver is trying to move the arm up:
             if (rawRaiseValue > 0) {
                 setRaiseArmPower(rawRaiseValue, 0.6);
             }
